@@ -1,4 +1,3 @@
-// src/HomePage.js
 import React from 'react';
 
 function HomePage() {
@@ -56,10 +55,11 @@ function HomePage() {
         `}
       </style>
       <img 
-        src="/photo/SURAIMAGE.jpg" 
-        alt="Profile" 
-        style={imgStyle} 
-      />
+  src={`${process.env.PUBLIC_URL}/photo/SURAIMAGE.jpg`} 
+  alt="Profile" 
+  style={imgStyle} 
+/>
+
       <h1 style={{ fontSize: '3rem', marginBottom: '10px' }}>Welcome to My Portfolio</h1>
       <p style={animationStyle}>
         Hello! I'm Surabhi S Shetty

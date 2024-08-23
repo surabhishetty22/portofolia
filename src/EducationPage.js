@@ -55,10 +55,6 @@ function EducationPage() {
     textAlign: 'center', // Center text
   };
 
-  const cardHoverStyle = {
-    transform: 'scale(1.05)',
-    boxShadow: '0 8px 16px rgba(0, 0, 0, 0.3)',
-  };
 
   return (
     <div style={containerStyle}>

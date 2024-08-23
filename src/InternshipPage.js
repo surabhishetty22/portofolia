@@ -15,10 +15,10 @@ const internships = [
       "Built admin features for managing complaints.",
     ],
     technologies: ["ReactJS", "AI", "Balsamiq", "Postman"],
-    image: "/photo/grievancePortalImage.png" // Update with the correct path to your image
+    image: `${process.env.PUBLIC_URL}/photo/grievancePortalImage.png`, // Update with the correct path to your image
   }
 ];
-
+// 
 function InternshipPage() {
   const containerStyle = {
     marginTop: '50px',
@@ -52,6 +52,7 @@ function InternshipPage() {
     marginTop: '350px', // Move the image container down by 100px
     marginLeft: '0', // Align with border if needed
   };
+
   const imageStyle = {
     width: '100%',
     height: '100%',
@@ -64,16 +65,7 @@ function InternshipPage() {
     flex: 1,
   };
 
-  const cardHeaderStyle = {
-    backgroundColor: '#28a745',
-    color: 'white',
-    padding: '15px',
-    fontWeight: 'bold',
-    borderRadius: '10px 10px 0 0',
-    textAlign: 'center',
-    fontSize: '1.75rem',
-    width: '100%',
-  };
+
 
   const titleStyle = {
     padding: '15px',
