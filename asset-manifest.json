@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/portofolia/static/css/main.e6c13ad2.css",
-    "main.js": "/portofolia/static/js/main.3950e047.js",
+    "main.js": "/portofolia/static/js/main.b83cde62.js",
     "static/js/453.ed949613.chunk.js": "/portofolia/static/js/453.ed949613.chunk.js",
     "index.html": "/portofolia/index.html",
     "main.e6c13ad2.css.map": "/portofolia/static/css/main.e6c13ad2.css.map",
-    "main.3950e047.js.map": "/portofolia/static/js/main.3950e047.js.map",
+    "main.b83cde62.js.map": "/portofolia/static/js/main.b83cde62.js.map",
     "453.ed949613.chunk.js.map": "/portofolia/static/js/453.ed949613.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.3950e047.js"
+    "static/js/main.b83cde62.js"
   ]
 }
