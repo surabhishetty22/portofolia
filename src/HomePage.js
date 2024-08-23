@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 function HomePage() {
   const headerStyle = {
     padding: '50px 0',
