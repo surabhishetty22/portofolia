@@ -4,6 +4,7 @@ import React from 'react';
 function HomePage() {
   const headerStyle = {
     padding: '50px 0',
+    height:'600px',
     background: 'linear-gradient(45deg, #007bff, #00d2d3)',
     color: 'white',
     textAlign: 'center',
@@ -65,6 +66,10 @@ function HomePage() {
       <p style={animationStyle}>
         Hello! I'm Surabhi S Shetty
       </p>
+      <p><h1>I'm currently pursuing my Bachelor's degree in Information Science and Engineering</h1></p>
+
+      <b><h2>"I'm excited about creating new web solutions and combining technology with great user experiences."</h2></b>
+      <br></br>
       <a href="#education" style={buttonStyle} className="btn btn-primary">Explore Now</a>
     </header>
   );

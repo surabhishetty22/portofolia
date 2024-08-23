@@ -6,18 +6,21 @@ const education = [
     degree: "Bachelor of Engineering in Information Science and Engineering",
     institution: "Sahyadri College of Engineering and Management",
     location: "Mangaluru, India",
+    Marks: "9.09 CGPA",
     YearOfPassing: "2025"
   },
   {
     degree: "12th Grade - Department of Pre University Education",
     institution: "Viveka Pre-University College",
     location: "Kota, India",
+    Marks: "93%",
     YearOfPassing: "2021"
   },
   {
     degree: "10th Grade - Central Board of Secondary Education",
     institution: "VISHWA VINAYAKA NATIONAL ENGLISH MEDIUM SCHOOL",
     location: "Thekkatte, India",
+    Marks: "89.8%",
     YearOfPassing: "2019"
   },
 ];
@@ -79,6 +82,7 @@ function EducationPage() {
           <div className="card-body" style={cardBodyStyle}>
             <p><strong>Institution:</strong> {item.institution}</p>
             <p><strong>Location:</strong> {item.location}</p>
+            <p><strong>Marks:</strong> {item.Marks}</p>
             <p><strong>Year of Passing:</strong> {item.YearOfPassing}</p>
           </div>
         </div>
