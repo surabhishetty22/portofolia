@@ -1,4 +1,4 @@
-// src/EducationPage.js
+
 import React from 'react';
 
 const education = [
@@ -29,7 +29,7 @@ function EducationPage() {
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center', // Center horizontally
+    alignItems: 'center', 
     padding: '20px',
   };
 
@@ -41,7 +41,7 @@ function EducationPage() {
     marginBottom: '20px',
     overflow: 'hidden',
     width: '100%',
-    maxWidth: '600px', // Max width for larger screens
+    maxWidth: '600px', 
   };
 
   const cardHeaderStyle = {
@@ -55,7 +55,7 @@ function EducationPage() {
 
   const cardBodyStyle = {
     padding: '20px',
-    textAlign: 'center', // Center text
+    textAlign: 'center', 
   };
 
 

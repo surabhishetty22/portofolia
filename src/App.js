@@ -1,12 +1,12 @@
 import React from 'react';
 import { HashRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import HomePage from './HomePage';
 import EducationPage from './EducationPage';
 import InternshipPage from './InternshipPage';
 import ProjectsPage from './ProjectsPage';
 import CertificatesPage from './CertificatesPage';
 import ContactPage from './ContactPage';
+import SkillsPage from './SkillsPage';
 
 const App = () => {
   return (
@@ -20,6 +20,7 @@ const App = () => {
               <li style={navItemStyle}><Link to="/internship" style={linkStyle}>Internship</Link></li>
               <li style={navItemStyle}><Link to="/projects" style={linkStyle}>Projects</Link></li>
               <li style={navItemStyle}><Link to="/certificates" style={linkStyle}>Certificates</Link></li>
+              <li style={navItemStyle}><Link to="/skill" style={linkStyle}>Skill</Link></li>
               <li style={navItemStyle}><Link to="/contact" style={linkStyle}>Contact</Link></li>
             </ul>
           </nav>
@@ -29,6 +30,7 @@ const App = () => {
             <Route path="/" element={<HomePage />} />
             <Route path="/education" element={<EducationPage />} />
             <Route path="/internship" element={<InternshipPage />} />
+            <Route path="/skill" element={<SkillsPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/certificates" element={<CertificatesPage />} />
             <Route path="/contact" element={<ContactPage />} />

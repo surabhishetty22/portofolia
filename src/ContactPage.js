@@ -4,33 +4,32 @@ const containerStyle = {
   marginTop: '50px',
   textAlign: 'center',
   padding: '20px',
-  backgroundColor: '#f4f4f9', // Light background color
+  backgroundColor: '#f4f4f9', 
   borderRadius: '10px',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', // Soft shadow
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)', 
 };
 
 const headingStyle = {
-  fontSize: '2.5rem', // Larger font size for the heading
+  fontSize: '2.5rem', 
   marginBottom: '30px',
   color: '#333',
   fontWeight: 'bold',
-  textTransform: 'uppercase', // Uppercase heading
-  letterSpacing: '1px', // Spacing between letters
+  textTransform: 'uppercase', 
+  letterSpacing: '1px', 
 };
 
 const buttonStyle = {
   fontSize: '1.1rem',
   padding: '15px 25px',
-  borderRadius: '25px', // Rounded corners for buttons
+  borderRadius: '25px', 
   textDecoration: 'none',
   display: 'inline-block',
   margin: '10px',
   cursor: 'pointer',
-  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', // Add shadow to buttons
-  outline: 'none', // Remove default outline
-  transition: 'none', // Remove transition effects
-};
-
+  boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)', 
+  outline: 'none', 
+  transition: 'none', 
+}
 const githubButtonStyle = {
   ...buttonStyle,
   backgroundColor: '#343a40',

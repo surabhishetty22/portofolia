@@ -15,10 +15,10 @@ const internships = [
       "Built admin features for managing complaints.",
     ],
     technologies: ["ReactJS", "AI", "Balsamiq", "Postman"],
-    image: `${process.env.PUBLIC_URL}/photo/grievancePortalImage.png`, // Update with the correct path to your image
+    image: `${process.env.PUBLIC_URL}/photo/grievancePortalImage.png`, 
   }
 ];
-// 
+
 function InternshipPage() {
   const containerStyle = {
     marginTop: '50px',
@@ -30,34 +30,34 @@ function InternshipPage() {
   };
 
   const cardStyle = {
-    border: '2px solid black', // Black border
+    border: '2px solid black', 
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     marginBottom: '20px',
     display: 'flex',
-    alignItems: 'flex-start', // Align items at the start of the container
+    alignItems: 'flex-start', 
     width: '100%',
     maxWidth: '900px',
     backgroundColor: 'white',
     color: 'black',
-    overflow: 'hidden', // Ensure content doesn't overflow
+    overflow: 'hidden', 
   };
 
   const imageContainerStyle = {
     display: 'flex',
-    justifyContent: 'center', // Center the image horizontally
-    alignItems: 'center', // Center the image vertically
+    justifyContent: 'center', 
+    alignItems: 'center', 
     width: '400px',
     height: '250px',
-    marginTop: '350px', // Move the image container down by 100px
-    marginLeft: '0', // Align with border if needed
+    marginTop: '350px',
+    marginLeft: '0', 
   };
 
   const imageStyle = {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    borderRadius: '0 0 10px 10px', // Rounded corners at bottom
+    borderRadius: '0 0 10px 10px', 
   };
 
   const cardBodyStyle = {
@@ -83,7 +83,7 @@ function InternshipPage() {
     backgroundColor: '#f0f8ff',
     padding: '15px',
     borderRadius: '10px',
-    textAlign: 'left', // Align text to the left
+    textAlign: 'left', 
   };
 
   const listStyle = {

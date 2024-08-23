@@ -10,7 +10,7 @@ const containerStyle = {
 };
 
 const cardStyle = {
-  border: '2px solid black', // Black border
+  border: '2px solid black', 
   borderRadius: '10px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
   marginBottom: '20px',
