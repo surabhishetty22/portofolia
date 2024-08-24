@@ -76,13 +76,14 @@ function ProjectsPage() {
         <div style={cardBodyStyle}>
           <h2 style={cardTitleStyle}>SMARTWATER</h2>
           <p style={cardTextStyle}>A web application for water management. Features include schedule management and bill tracking for various locations.</p>
-          <div style={sectionStyle}>
+          <p>The project output comprises an efficient organization of schedules, comprehensive water bill management, and an enhanced user experience through a user-friendly web interface.
+            </p><div style={sectionStyle}>
             <h3 style={sectionHeaderStyle}>Technologies Used:</h3>
             <ul style={listStyle}>
               <li>React</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-              <li>Express</li>
+              <li>PHP</li>
+              <li>SQL</li>
+        
             </ul>
           </div>
         </div>
@@ -92,15 +93,19 @@ function ProjectsPage() {
 
         <img src={`${process.env.PUBLIC_URL}/photo/predictiveModeling.png`} alt="Predictive Modeling" style={imageStyle} />
         <div style={cardBodyStyle}>
-          <h2 style={cardTitleStyle}>Predictive Modeling for Fibroid Detection</h2>
-          <p style={cardTextStyle}>Developed a machine learning model to predict the likelihood of fibroids based on medical imaging data.</p>
+          <h2 style={cardTitleStyle}>Predictive Modeling for Hairfall Detection</h2>
+          <p style={cardTextStyle}>Developed a machine learning model to predict the likelihood of hair loss based on individual factors,
+          enabling early intervention .</p>
+          <p>Systematically gathers data through web surveys using Google Forms</p>
+          <p>Analyzes various factors contributing to hair loss and provides a high or low risk prediction.</p>
           <div style={sectionStyle}>
             <h3 style={sectionHeaderStyle}>Technologies Used:</h3>
             <ul style={listStyle}>
               <li>Python</li>
-              <li>TensorFlow</li>
-              <li>Keras</li>
-              <li>Scikit-learn</li>
+              <li>ReactJS</li>
+              <li>Numpy</li>
+              <li>HTML</li>
+              <li>CSS</li>
             </ul>
           </div>
         </div>
