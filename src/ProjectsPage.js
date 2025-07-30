@@ -110,6 +110,39 @@ function ProjectsPage() {
           </div>
         </div>
       </div>
+
+
+            <div style={cardStyle}>
+        <img
+          src={`${process.env.PUBLIC_URL}/photo/echo.png`}
+          alt="EchoSpeech"
+          style={imageStyle}
+        />
+        <div style={cardBodyStyle}>
+          <h2 style={cardTitleStyle}>EchoSpeech: Enhancing Speech for Children with Autism</h2>
+<p style={cardTextStyle}>
+  AI-based platform designed to help children with Autism improve speech through personalized practice and gamified learning.
+</p>
+<p>
+  Offers Random and Parent Modes for tailored vocabulary exercises, and Image Mode for visual-based speech interaction.
+</p>
+<p>
+  Features real-time progress tracking and saves session data in CSV format for review by therapists and parents.
+</p>
+
+          <div style={sectionStyle}>
+            <h3 style={sectionHeaderStyle}>Technologies Used:</h3>
+            <ul style={listStyle}>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+              <li>Machine Learning (Speech Recognition)</li>
+              <li>CSV Data Handling</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
       <div style={cardStyle}>
         <img src={`${process.env.PUBLIC_URL}/photo/food.png`} alt="Food Recipe Management" style={imageStyle} />
         <div style={cardBodyStyle}>

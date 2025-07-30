@@ -6,7 +6,7 @@ const education = [
     degree: "Bachelor of Engineering in Information Science and Engineering",
     institution: "Sahyadri College of Engineering and Management",
     location: "Mangaluru, India",
-    Marks: "9.09 CGPA",
+    Marks: "9.12 CGPA",
     YearOfPassing: "2025"
   },
   {

@@ -68,7 +68,7 @@ function HomePage() {
       <p style={animationStyle}>
         Hello! I'm Surabhi S Shetty
       </p>
-      <p><h2>I'm currently pursuing my Bachelor's degree in Information Science and Engineering</h2></p>
+      <p><h2>I am a recent graduate with a Bachelor's degree in Information Science and Engineering.</h2></p>
       <b><h2>"I'm excited about creating new web solutions and combining technology with great user experiences."</h2></b>
       <br></br>
       <a href="#education" style={buttonStyle} className="btn btn-primary">Explore Now</a>

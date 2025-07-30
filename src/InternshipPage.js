@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const internships = [
   {
@@ -16,56 +16,77 @@ const internships = [
     ],
     technologies: ["ReactJS", "AI", "Balsamiq", "Postman"],
     image: `${process.env.PUBLIC_URL}/photo/grievancePortalImage.png`, 
-  }
+  },
+  {
+    title: "Pet Management System",
+    company: "Dataqueue Systems",
+    duration: "01-02-2025 – 23-05-2025",
+    location: "Remote",
+    description: "Designed and implemented a Pet Management System using the MERN stack, allowing users to register, explore, and adopt pets, while providing administrators with tools to oversee adoption requests and maintain detailed adoption logs.",
+    responsibilities: [
+      "Developed backend APIs using Node.js and Express for managing pet data.",
+      "Created responsive frontend components using ReactJS and Bootstrap.",
+      "Integrated MongoDB for secure and efficient data storage.",
+      "Implemented RESTful APIs, form validation, and role-based access control for admins, with API testing conducted via Thunder Client."
+    ],
+    technologies: ["ReactJS", "Node.js", "Express", "MongoDB", "Bootstrap", "ThunderClient"],
+   image: `${process.env.PUBLIC_URL}/photo/image.png`, 
+  },
 ];
 
 function InternshipPage() {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    if (currentIndex < internships.length - 1) {
+      setCurrentIndex(currentIndex + 1);
+    }
+  };
+
+  const current = internships[currentIndex];
+
   const containerStyle = {
     marginTop: '50px',
     padding: '10px',
-    width: '1500px',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
   };
 
   const cardStyle = {
-    border: '2px solid black', 
+    border: '2px solid black',
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)',
     marginBottom: '20px',
     display: 'flex',
-    alignItems: 'flex-start', 
+    alignItems: 'flex-start',
     width: '100%',
     maxWidth: '900px',
     backgroundColor: 'white',
     color: 'black',
-    overflow: 'hidden', 
+    overflow: 'hidden',
   };
 
-  const imageContainerStyle = {
-    display: 'flex',
-    justifyContent: 'center', 
-    alignItems: 'center', 
-    width: '400px',
-    height: '250px',
-    marginTop: '350px',
-    marginLeft: '0', 
-  };
+const imageContainerStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  width: '400px',
+  height: '100%', // Take full height of the card
+  padding: '20px',
+};
 
   const imageStyle = {
     width: '100%',
     height: '100%',
     objectFit: 'cover',
-    borderRadius: '0 0 10px 10px', 
+    borderRadius: '0 0 10px 10px',
   };
 
   const cardBodyStyle = {
     padding: '20px',
     flex: 1,
   };
-
-
 
   const titleStyle = {
     padding: '15px',
@@ -83,7 +104,7 @@ function InternshipPage() {
     backgroundColor: '#f0f8ff',
     padding: '15px',
     borderRadius: '10px',
-    textAlign: 'left', 
+    textAlign: 'left',
   };
 
   const listStyle = {
@@ -91,40 +112,53 @@ function InternshipPage() {
     paddingLeft: '20px',
   };
 
+  const buttonStyle = {
+    padding: '10px 20px',
+    backgroundColor: '#007bff',
+    color: 'white',
+    border: 'none',
+    borderRadius: '5px',
+    fontSize: '1rem',
+    cursor: 'pointer',
+    marginTop: '10px',
+  };
+
   return (
     <div style={containerStyle}>
-      {internships.map((item, index) => (
-        <div style={cardStyle} key={index}>
-          <div style={imageContainerStyle}>
-            <img src={item.image} alt={item.title} style={imageStyle} />
+      <div style={cardStyle}>
+        <div style={imageContainerStyle}>
+          <img src={current.image} alt={current.title} style={imageStyle} />
+        </div>
+        <div style={cardBodyStyle}>
+          <div style={titleStyle}>{current.title}</div>
+          <div style={sectionStyle}>
+            <p><strong>Company:</strong><br />{current.company}</p>
+            <p><strong>Duration:</strong><br />{current.duration}</p>
+            <p><strong>Location:</strong><br />{current.location}</p>
+            <p><strong>Description:</strong><br />{current.description}</p>
           </div>
-          <div style={cardBodyStyle}>
-            <div style={titleStyle}>{item.title}</div>
-            <div style={sectionStyle}>
-              <p><strong>Company:</strong><br />{item.company}</p>
-              <p><strong>Duration:</strong><br />{item.duration}</p>
-              <p><strong>Location:</strong><br />{item.location}</p>
-              <p><strong>Description:</strong><br />{item.description}</p>
-            </div>
-            <div style={sectionStyle}>
-              <p><strong>Responsibilities:</strong></p>
-              <ul style={listStyle}>
-                {item.responsibilities.map((responsibility, idx) => (
-                  <li key={idx}>{responsibility}</li>
-                ))}
-              </ul>
-            </div>
-            <div style={sectionStyle}>
-              <p><strong>Technologies:</strong></p>
-              <ul style={listStyle}>
-                {item.technologies.map((tech, idx) => (
-                  <li key={idx}>{tech}</li>
-                ))}
-              </ul>
-            </div>
+          <div style={sectionStyle}>
+            <p><strong>Responsibilities:</strong></p>
+            <ul style={listStyle}>
+              {current.responsibilities.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          </div>
+          <div style={sectionStyle}>
+            <p><strong>Technologies:</strong></p>
+            <ul style={listStyle}>
+              {current.technologies.map((tech, idx) => (
+                <li key={idx}>{tech}</li>
+              ))}
+            </ul>
           </div>
         </div>
-      ))}
+      </div>
+
+      {currentIndex < internships.length - 1 && (
+        <button onClick={handleNext} style={buttonStyle}>Next</button>
+      )}
     </div>
   );
 }
